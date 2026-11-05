@@ -1,0 +1,19 @@
+{
+  "defaults": {
+    "vmPath": "E:\\",
+    "isoPath": "E:\\iso\\WinServer_2022_SERVER_EVAL_English_x64.iso",
+    "switch": "Sophos SW LAN",
+    "adminPassword": "ChangeMe!2026",
+    "imageIndex": 2,
+    "cpu": 2,
+    "memoryGB": 4,
+    "diskGB": 40
+  },
+  "vms": [
+    { "name": "Web03" },
+    { "name": "Web04" },
+    { "name": "DB01", "cpu": 4, "memoryGB": 4, "diskGB": 100 },
+    { "name": "Core01", "imageIndex": 1, "memoryGB": 2, "diskGB": 30 },
+    { "name": "File-Server-Prod", "computerName": "FILESRV01" }
+  ]
+}
